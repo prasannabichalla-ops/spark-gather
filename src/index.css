@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    border-color: #BAB2B533;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+
+  body {
+    background-color: #FAF6F4;
+    color: #123C69;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom interactive & Uiverse-inspired styles */
+.spark-btn-primary {
+  @apply relative inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-semibold text-white bg-berry hover:bg-berry-hover transition-all duration-200 shadow-berry-glow active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.spark-btn-secondary {
+  @apply relative inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-semibold text-navy bg-white hover:bg-cream-surface border border-mauve/40 transition-all duration-200 shadow-soft active:scale-[0.98];
+}
+
+.spark-btn-navy {
+  @apply relative inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-semibold text-white bg-navy hover:bg-navy-light transition-all duration-200 shadow-navy-glow active:scale-[0.98];
+}
+
+.spark-card {
+  @apply bg-white rounded-2xl border border-mauve/25 shadow-soft transition-all duration-300 hover:shadow-card hover:-translate-y-1;
+}
+
+.spark-input {
+  @apply w-full px-4 py-3 rounded-xl bg-white border border-mauve/40 text-navy placeholder-navy/40 focus:outline-none focus:ring-2 focus:ring-berry/40 focus:border-berry transition duration-150;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #EEE2DC;
+}
+::-webkit-scrollbar-thumb {
+  background: #BAB2B5;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #AC3B61;
+}
